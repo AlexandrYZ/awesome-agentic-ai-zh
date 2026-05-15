@@ -1,11 +1,12 @@
 # Stage 0 — Foundations
 
-> [繁體中文](./00-foundations.md) | [简体中文](./00-foundations.zh-Hans.md) | **English**
+> [繁體中文](./00-foundations.md) | [简体中文](./00-foundations.zh-Hans.md) | **English** | [Русский](./00-foundations.ru.md)
 
 
 ⏱ **Time estimate**: 1-2 weeks (~5-15 hours, can skip if you have these)
 
 > 💡 **Don't recognize a term?** Check [`resources/glossary.en.md`](../resources/glossary.en.md) for a 30-second definition. Stage 0 doesn't lean on much jargon, but the next stages do.
+> 🗺️ **Want the big picture of the agent landscape first** (why some agents live in a terminal, some in Telegram, some on a Jetson board)? → [`resources/agent-paradigms.en.md`](../resources/agent-paradigms.en.md) (5 agent paradigms, ~10 min read)
 
 ## When to skip this stage
 

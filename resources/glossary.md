@@ -1,6 +1,6 @@
 # 用語小辭典（Glossary）
 
-> **繁體中文** | [简体中文](./glossary.zh-Hans.md) | [English](./glossary.en.md)
+> **繁體中文** | [简体中文](./glossary.zh-Hans.md) | [English](./glossary.en.md) | [Русский](./glossary.ru.md)
 
 > 本路線圖會大量出現「LLM」、「RAG」、「MCP」、「agent」這類詞。讀到不懂的詞先在這裡查 30 秒，再回去讀 stage 內容。
 >
@@ -169,6 +169,8 @@ Claude Code 內以 `/` 開頭的指令（`/help`、`/compact`、`/plan` 等）�
 ### Subagent（子 agent）
 
 主 Claude Code session 之外，spawn 出來跑特定任務的 agent。有自己的 context window。例如「給我一個 code-reviewer subagent 看看 diff」。
+
+寫法：在 `.claude/agents/<name>.md` 放 frontmatter + system prompt + tool whitelist。主 session 用 Task tool invoke（自動 parallel / sequential）。**跟 framework-based multi-agent 對照**：subagent 不需要裝 LangGraph / CrewAI 等 framework、直接寫 markdown 即可；但綁 Claude Code runtime。完整教學見 [Stage 5.5](../stages/05-claude-code-ecosystem.md#55--subagentsclaude-code-原生-multi-agent-機制)。
 
 ---
 

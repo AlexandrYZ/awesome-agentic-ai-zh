@@ -1,6 +1,6 @@
 # Stage 6 — 记忆 · RAG · 进阶
 
-> [繁體中文](./06-memory-rag.md) | **简体中文** | [English](./06-memory-rag.en.md)
+> [繁體中文](./06-memory-rag.md) | **简体中文** | [English](./06-memory-rag.en.md) | [Русский](./06-memory-rag.ru.md)
 
 ⏱ **时间估算**：2 周（约 10 小时）
 
@@ -105,7 +105,7 @@ Chunking 进阶思考：
 - chunk size、overlap、top-k、reranker 会互相影响，不要只单看其中一个参数。
 - 想想看，如果今天要 RAG 的资料有含图片的 PDF、会议字幕档，要如何切割比较好？
 
-## 🛠 动手练习（不是看过就好）
+## 🛠 动手练习（基础 illustrative 练习）
 
 ### 练习 1：Embeddings
 把 100 个句子做 embedding，找出某个 query 的最近邻。理解 vector 之间的距离意义。

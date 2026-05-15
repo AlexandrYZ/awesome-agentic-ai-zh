@@ -1,6 +1,6 @@
 # Stage 6 — Memory · RAG · Advanced
 
-> [繁體中文](./06-memory-rag.md) | [简体中文](./06-memory-rag.zh-Hans.md) | **English**
+> [繁體中文](./06-memory-rag.md) | [简体中文](./06-memory-rag.zh-Hans.md) | **English** | [Русский](./06-memory-rag.ru.md)
 
 
 ⏱ **Time estimate**: 2 weeks (~10 hours)
@@ -102,7 +102,7 @@ Advanced chunking questions:
 - Chunk size, overlap, top-k, and reranking affect each other. Do not inspect only one parameter.
 - Think about mixed data types: if your RAG source includes image-heavy PDFs and meeting transcripts, how should the chunking strategy change?
 
-## 🛠 Hands-on Exercises (do them, not just read)
+## 🛠 Hands-on Exercises (foundational, illustrative)
 
 ### Exercise 1: Embeddings
 Embed 100 sentences, find nearest neighbors of one query. Build intuition for what "vector distance" means.
