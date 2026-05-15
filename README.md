@@ -1,279 +1,237 @@
 <div align="right">
-  <strong>繁體中文</strong> | <a href="./README.zh-Hans.md">简体中文</a> | <a href="./README.en.md">English</a> | <a href="./README.ru.md">Русский</a>
+  <strong>Русский</strong> | <a href="./README.zh-TW.md">繁體中文</a> | <a href="./README.zh-Hans.md">简体中文</a> | <a href="./README.en.md">English</a>
 </div>
 
 <div align="center">
 
-![AI Agent 學習路徑](resources/diagrams/banner.png)
+![Карта обучения AI Agent](resources/diagrams/banner.en.png)
 
-# awesome-agentic-ai-zh
-
-### 🤖 AI Agent 學習地圖 — 從基本 LLM 概念到自己打造多 agent 系統
-
-<p><em><b>學習路線圖 + 145+ 資源 curation + 簡單 illustrative 案例</b><br/>結構化 7 階段、從「LLM 是什麼、token 怎麼算」走到 multi-agent 編排、本地部署</em></p>
-
-[![License](https://img.shields.io/badge/license-MIT-blue?style=flat)](LICENSE)
-[![繁中](https://img.shields.io/badge/語言-繁體中文-red?style=flat)](README.md)
-[![简中](https://img.shields.io/badge/語言-简体中文-orange?style=flat)](README.zh-Hans.md)
-[![EN](https://img.shields.io/badge/lang-English-blue?style=flat)](README.en.md)
-![GitHub stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat&logo=github)
-![GitHub forks](https://img.shields.io/github/forks/WenyuChiou/awesome-agentic-ai-zh?style=flat&logo=github)
+# awesome-agentic-ai-ru
 
 </div>
 
----
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![繁中](https://img.shields.io/badge/語言-繁體中文-red)](README.zh-TW.md)
+[![简中](https://img.shields.io/badge/語言-简体中文-orange)](README.zh-Hans.md)
+[![EN](https://img.shields.io/badge/lang-English-blue)](README.en.md)
+[![RU](https://img.shields.io/badge/lang-Русский-green)](README.md)
+![GitHub stars](https://img.shields.io/github/stars/AlexandrYZ/awesome-agentic-ai-ru?logo=github)
+![GitHub forks](https://img.shields.io/github/forks/AlexandrYZ/awesome-agentic-ai-ru?logo=github)
 
-## 🎯 專案介紹
+> **Русскоязычная community translation** проекта [WenyuChiou/awesome-agentic-ai-zh](https://github.com/WenyuChiou/awesome-agentic-ai-zh). Этот fork ведется как самостоятельная русская версия; upstream остается источником новых изменений.
 
-**本 repo 角色定位**：**學習路線圖 + 145+ 資源 curation + 簡單 illustrative 案例**——三件事為核心、幫想學 AI / AI agent 的人從「不知道從哪開始」走到「能設計多 agent 系統」。
+> **Статус перевода:** текущий русский корпус покрывает этапы 0-7 и материалы, подготовленные в исходной русской ветке. Новые изменения upstream, включая Stage 8 и последующие переработки, будут переноситься отдельными синхронизационными итерациями.
 
-具體做法：
-
-| 核心 | 做什麼 | 規模 |
-|---|---|---|
-| **學習路線圖** | 把網路散落的高品質專案、教材、必修閱讀，按**從零開始、循序漸進**整理成 **7 個階段** + 2 條學習路線 + 5 條延伸路徑 | 7 stages、2 tracks |
-| **資源 curation** | 每階段精選 **145+** 個 project（含星等、適合誰、教什麼、怎麼跑），加上中文社群 MCP / Skill 完整 catalog | 145+ projects、62 MCP/Skill |
-| **簡單 illustrative 案例** | 每階段附 1-5 個**基礎練習**（70-150 行 starter + dual-path Ollama/Anthropic SDK 對照 + mock-based test） | 27 個練習 folder |
-
-走完整條路線，你會從「**LLM 使用者**」進階到「**agent 系統建構者**」——能看懂 framework 在做什麼、能設計多 agent 協作、能寫自己的 MCP server。
-
-> 🙏 **特別感謝 [`datawhalechina/hello-agents`](https://github.com/datawhalechina/hello-agents)**：中文圈最完整的 chapter-length agent 教材（16 種 production 能力、特別是 **memory / RAG 那段**寫得最完整）。本 repo 是**路線圖 + 入門練習**、hello-agents 是**深度章節教材**——兩個角色互補、不重做。每個 stage / 練習 folder 都有 📚 callout 點過去。
+Карта обучения agentic AI — **от основ LLM до построения multi-agent систем**. Структурированный путь из 7 этапов: от «что такое LLM, как считаются токены» до multi-agent orchestration (оркестровки нескольких агентов) и локального развёртывания. На каждом этапе — обязательные демо, обязательное чтение и подборка проектов.
 
 ---
 
-## 📋 目錄
+## 🎯 Зачем это нужно
 
-- [🎯 專案介紹](#-專案介紹)
-- [📚 快速開始](#-快速開始)
-  - [線上閱讀](#線上閱讀)
-  - [本地下載](#本地下載)
-  - [✨ 你會收穫什麼？](#-你會收穫什麼)
-- [🗺️ 學習地圖（兩條學習路徑）](#️-學習地圖兩條學習路徑)
-- [💡 如何學習](#-如何學習)
-- [📚 相關資源](#-相關資源)
-- [🤝 如何貢獻](#-如何貢獻)
-- [🙏 致謝](#-致謝)
-- [🎓 引用](#-引用)
+Если ты хочешь изучить AI-приложения или вырасти от основ до multi-agent систем — **главная проблема не в нехватке ресурсов, а в непонимании с чего начать**. Awesome-списки на английском и китайском содержат сотни репозиториев, но без пути; люди, изучающие Claude Code, LangGraph или RAG, разбросаны по разным сообществам, используют разные термины и рекомендуют разные стартовые проекты.
+
+Мы собрали **145+ отобранных проектов** в карту обучения «с нуля до продвинутых multi-agent», разбитую на **7 этапов**. Каждый этап чётко говорит, **что учить, какие упражнения делать, какие проекты изучать и какую самопроверку пройти перед следующим этапом**.
+
+После основного пути ты переходишь от роли «**пользователь LLM**» к роли «**строитель agent-систем**» — способного проектировать multi-agent коллаборацию, писать свой MCP server и поставлять реальные agent-системы.
+
+---
+
+## 📋 Содержание
+
+- [🎯 Зачем это нужно](#-зачем-это-нужно)
+- [📚 Быстрый старт](#-быстрый-старт)
+- [🗺️ Карта обучения (две дорожки)](#️-карта-обучения-две-дорожки)
+- [💡 Как учиться](#-как-учиться)
+- [📚 Связанные ресурсы](#-связанные-ресурсы)
+- [🤝 Контрибьютинг](#-контрибьютинг)
+- [🙏 Благодарности](#-благодарности)
+- [🎓 Цитирование](#-цитирование)
 - [License](#license)
 
 ---
 
-## 📚 快速開始
+## 📚 Быстрый старт
 
-### 🚀 第一次接觸 AI agent / 沒寫過 code？
+### 🚀 Первый раз с AI agents / никогда не писал код?
 
-先看 **[`resources/setup-guide.md`](resources/setup-guide.md)** — 30-45 分鐘從零帶你申請 API key、裝好 Python、跑出第一個 LLM hello-world。
+Начни здесь: **[`resources/setup-guide.ru.md`](resources/setup-guide.ru.md)** — 30–45 минут от нуля. Получишь API-ключ, установишь Python и запустишь первый LLM hello-world.
 
-### 線上閱讀
-- **[學習地圖（兩條學習路徑）](#️-學習地圖兩條學習路徑)** — 看完這節決定走 Track A 還 Track B
-- **[Stage 0 基礎準備](stages/00-foundations.md)** — 已經會 Python / git / API 的人可以直接跳 Stage 1
+### Читать онлайн
+- **[Карта обучения (две дорожки)](#️-карта-обучения-две-дорожки)** — прочитай этот раздел, чтобы выбрать дорожку A или B
+- **[Этап 0: Foundations](stages/00-foundations.ru.md)** — уже знаешь Python / git / API? Сразу к этапу 1
 
-### 本地下載
+### Локальный клон
 ```bash
-git clone https://github.com/WenyuChiou/awesome-agentic-ai-zh.git
-cd awesome-agentic-ai-zh
-# 從 stages/00-foundations.md 開始
+git clone https://github.com/AlexandrYZ/awesome-agentic-ai-ru.git
+cd awesome-agentic-ai-ru
+# Начни с stages/00-foundations.ru.md
 ```
 
-### ✨ 你會收穫什麼？
+### ✨ Что ты получишь
 
-- 📖 **完全免費** — MIT 授權，所有內容開放共學
-- 🗺️ **兩條學習路徑** — Track A（CLI Power User）給「想 USE 現成 CLI agent」的人；Track B（Agent Builder）給「想 BUILD 自己 agent」的人。共用 Stage 0-2 基礎
-- 🛠️ **基礎動手練習** — 每階段附 1-5 個 illustrative 練習（題目 + dual-path SDK 對照 + success criteria）。定位是**基礎入門 + 路線確認**——chapter-length 深度練習見對應 stage 的 hello-agents / Anthropic Cookbook callout
-- 🎯 **精選 145+ 個 projects** — 每個都附星等推薦、適合誰、教什麼、怎麼跑（含本地 LLM 執行：Ollama、llama.cpp、LocalAI、MLX）
-- 🌏 **中文 / 英文雙語** — 繁中為主、英文版完整對照
-- 🎓 **不只「框架」、還有「Claude Code 生態」** — MCP / Skills / Plugins / SDK 完整堆疊
-- 🔬 **5 條依使用者分流的延伸路線** — 研究員 / 開發者 / 老師 / 知識工作者 / **日常使用者**
-- ⏱️ **預估時程寫清楚** — 主幹最少 14-19 週、現實 5-6 個月（每週 5-8 hr）
+- 📖 **Полностью бесплатно** — MIT-лицензия, весь контент открыт
+- 🗺️ **Две дорожки** — Track A (CLI Power User) для «использовать готовые CLI»; Track B (Agent Builder) для «собрать своё». Общий фундамент — этапы 0–2.
+- 🛠️ **Обязательные практические упражнения** — 1–5 мини-проектов на этап (спецификации + критерии успеха, **код пишешь сам**, не готовые демо); просто читать — не считается
+- 🎯 **145+ отобранных проектов** — каждый со звёздным рейтингом, целевой аудиторией, описанием чему учит и как запустить (включая локальные LLM-раннеры: Ollama, llama.cpp, LocalAI, MLX)
+- 🌏 **Русский вход по умолчанию** — китайские и английская версии сохранены как companion-материалы upstream
+- 🎓 **Шире фреймворков: экосистема Claude Code** — MCP / Skills / Plugins / SDK, полный стек
+- 🔬 **5 специализированных веток** — researcher / developer / teacher / knowledge worker / **everyday user**
+- ⏱️ **Затраты времени, честно** — минимум 14–19 недель, реалистично 5–6 месяцев (5–8 ч/нед part-time)
 
 ---
 
-## 🗺️ 學習地圖（兩條學習路徑）
+## 🗺️ Карта обучения (две дорожки)
 
-![AI Agent 學習地圖](resources/diagrams/learning-map.png)
+![Карта обучения AI Agent](resources/diagrams/learning-map.en.png)
 
-走完 **Stage 0-2（共用基礎）** 之後，依你的目的選一條學習路徑：
+После **этапов 0–2 (общий фундамент)** выбери дорожку по цели:
 
-- **Track A — CLI Power User**：你想**用**現成的 CLI agent（Claude Code、Codex、OpenCode、Gemini CLI 等）把工作做順、效率拉高，不打算自己從零寫 agent。3 個 sub-stage（A1-A3）。
-- **Track B — Agent Builder**：你想**從零打造**自己的 agent——學 framework、寫 ReAct、設計 multi-agent。Stage 3-7 是主路線。
+- **Track A — CLI Power User**: ты хочешь **ИСПОЛЬЗОВАТЬ** существующие CLI agents (Claude Code, Codex, OpenCode, Gemini CLI и т. д.), чтобы делать работу, а не строить агентов с нуля. 3 под-этапа (A1–A3).
+- **Track B — Agent Builder**: ты хочешь **СОБРАТЬ** свой агент — выучить фреймворки, написать ReAct, спроектировать multi-agent систему. Основной путь — этапы 3–7.
 
-兩條學習路徑**不互斥**——多數人是先走 A 把 CLI 用起來，再回到 B 學內部運作；或反過來也行。Stage 5（Claude Code 生態）兩條路徑都會用到。
+Дорожки **не взаимоисключающие** — большинство сначала идёт по A, чтобы быстро набраться практики, затем возвращается к B за внутренностями (или наоборот). Этап 5 (Claude Code Ecosystem) общий для обеих дорожек.
 
-### 共用基礎（Stage 0-2）
+### Общий фундамент (этапы 0–2)
 
-| Stage | 主題 | 關鍵內容 | 預估時程 |
+| Этап | Тема | Ключевой контент | Время |
 |---|---|---|---|
-| **0** | [基礎準備](stages/00-foundations.md) | Python · CLI · git · API · JSON | 1-2 週 |
-| **1** | [LLM 入門](stages/01-llm-basics.md) | token · API · 各家 LLM 比較 · 本地 LLM | 1 週 |
-| **2** | [Prompt 設計](stages/02-prompt-engineering.md) | 系統 prompt · few-shot · CoT | 1-2 週 |
+| **0** | [Foundations](stages/00-foundations.ru.md) | Python · CLI · git · API · JSON | 1–2 нед |
+| **1** | [LLM Basics](stages/01-llm-basics.ru.md) | tokens · API · сравнение моделей · локальный LLM | 1 нед |
+| **2** | [Prompt Engineering](stages/02-prompt-engineering.ru.md) | system prompts · few-shot · CoT | 1–2 нед |
 
-### Track A — CLI Power User（想用 CLI 把事情做完）
+### Track A — CLI Power User (использовать CLI для работы)
 
-| Stage | 主題 | 關鍵內容 | 預估時程 |
+| Этап | Тема | Ключевой контент | Время |
 |---|---|---|---|
-| **A1** | [CLI Agent 入門 + 選擇](tracks/cli/A1-cli-intro.md) | 6 主流 CLI 比較 · 安裝 · 第一次跑 | 1 週 |
-| **A2** | [CLI Workflow Patterns](tracks/cli/A2-cli-workflow.md) | CLAUDE.md · slash command · 多步驟拆解 | 1-2 週 |
-| **A3** | [Integration & Production](tracks/cli/A3-cli-production.md) | MCP 接 CLI · CI 自動化 · cost / observability | 1-2 週 |
+| **A1** | [CLI Agent: введение и выбор](tracks/cli/A1-cli-intro.ru.md) | сравнение 7 CLI · установка · первый запуск | 1 нед |
+| **A2** | [Паттерны CLI workflow](tracks/cli/A2-cli-workflow.ru.md) | CLAUDE.md · slash commands · multi-step decomposition | 1–2 нед |
+| **A3** | [Интеграция и продакшен](tracks/cli/A3-cli-production.ru.md) | MCP-into-CLI · CI automation · cost / observability | 1–2 нед |
 
-> **Track A 預估總時程**：3-5 週（含 Stage 0-2 約 6-8 週）。核心參考：[`resources/cli-agents-guide.md`](resources/cli-agents-guide.md)。
+> **Общее время Track A**: 3–5 недель (с этапами 0–2: 6–8 недель). Основной справочник: [`resources/cli-agents-guide.ru.md`](resources/cli-agents-guide.ru.md).
 
-### Track B — Agent Builder（從零打造 agent）
+### Track B — Agent Builder (собрать агента с нуля)
 
-| Stage | 主題 | 關鍵內容 | 預估時程 |
+| Этап | Тема | Ключевой контент | Время |
 |---|---|---|---|
-| **3** ⭐ | [Tool Use & Agent 入門](stages/03-tool-use-and-hello-agent.md) | function calling · ReAct · 5 個動手練習 | 2-3 週 |
-| **4** | [Agent 框架](stages/04-agent-frameworks.md) | LangGraph · AutoGen · CrewAI · Smolagents | 2-3 週 |
-| **5** ⭐⭐ | [Claude Code 生態](stages/05-claude-code-ecosystem.md) | MCP · Skills · Plugins · Marketplace（兩條路徑都會用到） | 3-4 週 |
-| **6** | [Memory · RAG · 進階](stages/06-memory-rag.md) | vector DB · long-term memory · contextual retrieval | 2 週 |
-| **7** | [進階 Multi-Agent](stages/07-multi-agent-production.md) | multi-agent orchestration · eval · observability · SDK 進階 | 2-4 週 |
+| **3** ⭐ | [Tool Use & Hello Agent](stages/03-tool-use-and-hello-agent.ru.md) | function calling · ReAct · 5 практических упражнений | 2–3 нед |
+| **4** | [Agent Frameworks](stages/04-agent-frameworks.ru.md) | LangGraph · AutoGen · CrewAI · Smolagents | 2–3 нед |
+| **5** ⭐⭐ | [Claude Code Ecosystem](stages/05-claude-code-ecosystem.ru.md) | MCP · Skills · Plugins · Marketplace (общий для обеих дорожек) | 3–4 нед |
+| **6** | [Memory · RAG · Advanced](stages/06-memory-rag.ru.md) | векторные БД · long-term memory · contextual retrieval | 2 нед |
+| **7** | [Multi-Agent · Advanced](stages/07-multi-agent-production.ru.md) | multi-agent orchestration · eval · observability · advanced SDK | 2–4 нед |
 
-> **Track B 預估總時程**：主幹最少 **14-19 週**、現實 **5-6 個月**（每週 5-8 hr 兼職）
+> **Общее время Track B**: минимум **14–19 недель**, реалистично **5–6 месяцев** (5–8 ч/нед part-time)
 
-> 💡 **想看跨 stage 的完整範例？** [7 步打造你的第一個 AI Agent](walkthroughs/build-first-agent-in-7-steps.md) — 同一個 Paper Summary Bot 從 Stage 1 一路寫到 Stage 7，~350 行真實程式碼（**Track B 適用**）
+> 💡 **Нужен конкретный сквозной пример?** [Собери первого AI agent за 7 шагов](walkthroughs/build-first-agent-in-7-steps.ru.md) — один и тот же Paper Summary Bot прослежен с этапа 1 до этапа 7, ~350 строк рабочего кода (**Track B**)
 
-走完主幹後，依你的身分挑一條延伸路線繼續走。**不確定挑哪條？**
+После основного пути — одна из 5 специализированных веток. **Не уверен, какую брать?**
 
-![Branch 決策樹](resources/diagrams/branch-decision-tree.png)
+![Дерево выбора ветки](resources/diagrams/branch-decision-tree.en.png)
 
-> 💡 **「日常使用者」這條路線不必走完主幹就能直接讀**——是給「想用 AI、但不一定要寫 code」的人。
+> 💡 **Ветку Everyday User можно читать сразу, без прохождения основного пути** — она для тех, кто хочет использовать AI, без написания кода.
 
-| 路線 | 適合誰 | 主題 |
+| Ветка | Для кого | Темы |
 |---|---|---|
-| 🔬 [研究人員](branches/for-researcher.md) | 研究生、博後、PI | 文獻整理 · paper 寫作 · multi-agent review |
-| 💻 [開發者](branches/for-developer.md) | 軟體工程師 | Cursor · Aider · CLI delegation · code review |
-| 🎓 [教師](branches/for-teacher.md) | 老師、講師 | 備課 · 投影片 · 學生 feedback · 隱私 / 倫理 · prompt 範本 |
-| 📊 [知識工作者](branches/for-knowledge-worker.md) | 顧問、PM、分析師 | Email · 會議紀錄 · report 自動化 |
-| 👥 [日常使用者](branches/for-everyday-users.md) | ChatGPT / Claude.ai 使用者 | 寫信 · 學習 · 隱私場景 · CLI agent 入門 |
+| 🔬 [Researcher](branches/for-researcher.ru.md) | Аспиранты, постдоки, PI | Lit triage · paper writing · multi-agent review |
+| 💻 [Developer](branches/for-developer.ru.md) | Программисты | Cursor · Aider · CLI delegation · code review |
+| 🎓 [Teacher](branches/for-teacher.ru.md) | Преподаватели, инструкторы | Lesson planning · слайды · feedback студентам · privacy / этика · prompt templates |
+| 📊 [Knowledge Worker](branches/for-knowledge-worker.ru.md) | Консультанты, PM, аналитики | Email · meeting notes · автоматизация отчётов |
+| 👥 [Everyday User](branches/for-everyday-users.ru.md) | Пользователи ChatGPT / Claude.ai | Ежедневное письмо · обучение · privacy · введение в CLI agent |
 
 ---
 
-## 💡 如何學習
+## 💡 Как учиться
 
-這份路線圖兼顧概念與實作，目標是帶你**從 LLM 使用者一路走到 agent 系統建構者**。適合**有基本 Python 能力**的開發者、研究生、自學者。動手之前，先確認你有：
+Привет — будущий строитель agent-систем. Несколько советов перед стартом.
 
-- **基本 Python** — 寫過 function、用過 API、看得懂 JSON
-- **基本 git** — clone、commit、push
-- **想學的動機** — agent 是 2025 年之後變化最快的領域，需要持續投入
+Эта карта обучения балансирует концепции и практику, помогая тебе **перейти от пользователя LLM к строителю agent-систем**. Предполагается **базовый Python**. До старта нужно:
 
-上面有缺的就從 Stage 0 補齊；都會了就**直接跳 Stage 1**。
+- **Базовый Python** — писал функции, использовал API, читаешь JSON
+- **Базовый git** — clone, commit, push
+- **Мотивация учиться** — agents — самая быстро меняющаяся область AI в 2025+ и требует постоянных усилий
 
-主幹分 4 部分：
+Если чего-то не хватает — пройди этап 0; если всё ок — **стартуй с этапа 1**.
 
-- **Part 1（Stage 0-2）：基礎與 LLM 入門** — Python / git / API、什麼是 LLM、怎麼設計 prompt
-- **Part 2（Stage 3-4）：建構你的 Agent** — 從 tool use 進化到 agent，學主流 framework
-- **Part 3（Stage 5）：Claude Code 生態系** — MCP / Skills / Plugins，這是整條路線的核心
-- **Part 4（Stage 6-7）：進階整合** — memory / RAG / multi-agent 協作
+Основной путь состоит из 4 частей:
 
-> 🔭 **三層概念進化**：**prompt engineering**（Stage 2、單一 prompt 怎麼寫）→ **context engineering**（Stage 3 之後、怎麼動態組 system prompt + memory + retrieved chunks + tool schema）→ **harness engineering**（Stage 7、agent loop / eval / observability / deploy 整套包成 production system）。3 個術語對應 3 個 phase、不必另外找資源。詳見 [`stages/02-prompt-engineering.md#-進階context-engineering不是-prompt-engineering-了`](stages/02-prompt-engineering.md) 跟 [`stages/07-multi-agent-production.md`](stages/07-multi-agent-production.md) 必修閱讀 §5+6。
+- **Часть 1 (этапы 0–2): Foundations & LLM Basics** — Python / git / API, что такое LLM, дизайн промптов
+- **Часть 2 (этапы 3–4): Собери своего агента** — от tool use до agents, изучи основные фреймворки
+- **Часть 3 (этап 5): Claude Code Ecosystem** — MCP / Skills / Plugins, сердце пути
+- **Часть 4 (этапы 6–7): Продвинутая интеграция** — memory / RAG / multi-agent коллаборация
 
-走完主幹（14-19 週）後，依你的身分（研究員 / 開發者 / 老師 / 知識工作者 / 日常使用者）挑一條延伸路線繼續走。
+После основного пути (14–19 недель) — выбери ветку.
 
-最重要的一句話：**不要跳過 動手練習**。每個 stage 的 動手練習都是「不動手就學不會」的東西，光讀過去後面會卡住。
+Главный совет: **не пропускай практические упражнения**. Упражнения каждого этапа — «без них не выучишь»; пробежал глазами — застрянешь дальше.
 
-> 🎓 **動手練習怎麼用才對**：每個練習 folder 裡的 `starter.py` 是**完整解答**、不是 TODO skeleton。如果你 clone 下來直接 `cat starter.py` + `python test.py` pass、會誤以為「我學會了」、其實沒寫一行 code。**正確學習法**：`mv starter.py starter_reference.py`、看 signature 不看 body、自己重寫、卡住才回去對照。完整方法論 + 每個 stage 的時間預算 + 卡住處理流程看 [`docs/HOW_TO_USE.md`](docs/HOW_TO_USE.md)。
-
-準備好了嗎？[從 Stage 0 開始](stages/00-foundations.md)。
+Готов? [Старт с этапа 0](stages/00-foundations.ru.md).
 
 ---
 
-## 📚 相關資源
+## 📚 Связанные ресурсы
 
-完整的相關資源（用語說明 + 常用 MCP / Skill highlight + awesome lists + 中文社群）抽到 **[RESOURCES.md](RESOURCES.md)** 避免主頁過長。
+Полный блок связанных ресурсов (определения терминов + подборка MCP/Skill для повседневных инструментов + awesome-списки + ресурсы китайского сообщества) живёт в **[RESOURCES.ru.md](RESOURCES.ru.md)**, чтобы README оставался сфокусированным.
 
-直接看常用入口、依**情境**分組：
+Частые быстрые ссылки:
 
-### 🚀 入門 / 環境設定
-
-| 你的狀況 | 去哪 | 內容 |
-|---|---|---|
-| 完全沒寫過 code、第一次接觸 AI agent | [`resources/setup-guide.md`](resources/setup-guide.md) | 30-45 分鐘從零裝好（API key、Python、第一個 hello-world） |
-| 不知道挑哪個 LLM provider | [`resources/setup-guide.md` §A](resources/setup-guide.md#a--申請第一個-api-key約-10-分鐘) | Anthropic / OpenAI / DeepSeek / Kimi / NVIDIA NIM 對照 |
-| 同主題 awesome list / 中文社群 | [`RESOURCES.md` §同主題清單](RESOURCES.md#同主題的清單型-awesome-lists) | 5-10 分鐘逛一輪 |
-
-### 📖 概念 / 用語
-
-| 你的狀況 | 去哪 | 內容 |
-|---|---|---|
-| 不懂某個詞（LLM / agent / RAG / token / MCP / Skill / 向量資料庫…） | [`resources/glossary.md`](resources/glossary.md) | 30+ 詞、每個 30-80 字 + 哪 stage 講細的 |
-| 想搞懂 agent 為什麼有的在 terminal、有的在 Telegram、有的在 Jetson | [`resources/agent-paradigms.md`](resources/agent-paradigms.md) | 5 種 agent 型態 mental model + Hermes / OpenClaw 例子 |
-| MCP / Skills / Plugins 用語對照 | [`RESOURCES.md` §三個核心用語](RESOURCES.md#三個核心用語mcp--skills--plugins) | 1 頁速查表 |
-
-### 🛠 動手實作
-
-| 你的狀況 | 去哪 | 內容 |
-|---|---|---|
-| 想動手寫 Skill / MCP server / 接 Word / Zotero / 本機 LLM | [`resources/cookbook.md`](resources/cookbook.md) | 6 個 step-by-step recipe、每個 30-50 分鐘 |
-| 卡在 tool calling（LLM 不呼叫 / schema 寫不好 / ReAct loop 跑不停） | [`examples/stage-5/tool-calling-tutor/`](examples/stage-5/tool-calling-tutor/) | 可裝進 Claude Code 的 skill、4-symptom diagnostic |
-| 動手練習怎麼正確使用（主動 vs 被動模式） | [`docs/HOW_TO_USE.md`](docs/HOW_TO_USE.md) | 5-10 分鐘讀完、配合每個 stage 用 |
-
-### 🔌 接日常工具 / 找 MCP server
-
-| 你的狀況 | 去哪 | 規模 |
-|---|---|---|
-| 接 Notion / Obsidian / Excel / GitHub 等工具 | [`RESOURCES.md` §接日常工具](RESOURCES.md#接日常工具常用-mcp-server--skill) | 7-8 個 highlight |
-| 完整 MCP server / Skill 目錄（含星等、分類） | [`resources/mcp-skills-catalog.md`](resources/mcp-skills-catalog.md) | 62 條、6 大分類 |
-
-### 🔬 研究 / production 級
-
-| 你的狀況 | 去哪 | 內容 |
-|---|---|---|
-| 研究 workflow + multi-LLM delegation skill | [`RESOURCES.md` §研究工作流](RESOURCES.md#研究工作流本-repo-維護者出品) | 本 repo 維護者出品的 Claude Code 研究 skill 對 |
-| CLI agent 7 家對照 + production 搭配 | [`resources/cli-agents-guide.md`](resources/cli-agents-guide.md) | Track A 的核心參考、148 行 |
-| Schema 設計規則（tool calling 必看） | [`resources/schema-design-cheatsheet.md`](resources/schema-design-cheatsheet.md) | 5 條黃金規則 + 5 個 anti-pattern |
+- 🚀 **Никогда не писал код или первый раз с AI agents?** → [`resources/setup-guide.ru.md`](resources/setup-guide.ru.md) (30–45 минут от нуля)
+- 📖 **Не знаешь термин?** (LLM, agent, RAG, token, MCP, Skill, vector DB, …) → [`resources/glossary.ru.md`](resources/glossary.ru.md) — 30+ частых терминов, по 30–80 слов определения + указание этапа, где он покрыт
+- 🔑 **Что значат MCP / Skills / Plugins** → [RESOURCES.ru.md §три ключевых термина](RESOURCES.ru.md#three-core-terms-mcp--skills--plugins)
+- 🔌 **Подключить Notion / Obsidian / Excel / GitHub и т. д.** → [RESOURCES.ru.md §интеграции с повседневными инструментами](RESOURCES.ru.md#daily-tool-integrations-mcp-servers--skills) или полный каталог из 62 записей [`resources/mcp-skills-catalog.ru.md`](resources/mcp-skills-catalog.ru.md)
+- 🔬 **Research workflow + связка multi-LLM делегирования** → [RESOURCES.ru.md §research workflow](RESOURCES.ru.md#research-workflow-by-the-repo-maintainer)
+- 📚 **Тематические awesome-списки / китайское сообщество** → [RESOURCES.ru.md §тематические списки](RESOURCES.ru.md#topic-based-awesome-lists)
 
 ---
 
-## 🤝 如何貢獻
+## 🤝 Контрибьютинг
 
-這個 repo 是一個 AI 學習文件，如果你也有蒐集很好的資源，也歡迎貢獻：
+Этот репозиторий — обучающий документ по AI; если ты тоже собрал хорошие ресурсы, контрибьюты очень приветствуются:
 
-- 🐛 **回報 Bug** — 內容錯誤、連結失效、過時資訊 → 開 Issue
-- 💡 **提建議** — 缺什麼 stage、該加哪個 project → 開 Issue 討論
-- 📝 **完善內容** — 改進現有 stage 內容、修 typo → 直接 PR
-- ✍️ **新增 project** — 在某個 stage 加 1-3 個 project，並附上「為什麼這個 project 適合放這個 stage」的說明
-- 🌏 **翻譯** — 補英文 companion 沒翻到的段落，或翻成其他語言
-- 🌱 **擔任 Stage / Branch maintainer** — 長期 review 特定領域，詳見 [CONTRIBUTORS.md](CONTRIBUTORS.md)
+- 🐛 **Bug reports** — неверный контент, битые ссылки, устаревшая инфа → открой Issue
+- 💡 **Предложения** — пропущенный этап / новый проект в подборку → открой Issue для обсуждения
+- 📝 **Улучшения** — уточнить контент этапа, исправить опечатки → прямой PR
+- ✍️ **Добавить проект** — 1–3 новых проекта на этап с обоснованием «почему это учит данному этапу»
+- 🌏 **Переводы** — улучшить английскую/русскую версию или перевести на другие языки
+- 🌱 **Стать мейнтейнером этапа / ветки** — долгосрочный ревью конкретной области, см. [CONTRIBUTORS.md](CONTRIBUTORS.md)
 
-PR 流程跟 style 規範請看 [CONTRIBUTING.md](CONTRIBUTING.md) 跟 [resources/style-guide.md](resources/style-guide.md)。
+Процесс PR и правила стиля: [CONTRIBUTING.md](CONTRIBUTING.md) + [resources/style-guide.ru.md](resources/style-guide.ru.md).
 
-> 📅 **想看最近 ship 了什麼** → [`CHANGELOG.md`](CHANGELOG.md)（最近 14 天）。
-> Maintainer 內部進度與 launch checklist 放在 [`.github/launch-checklist.md`](.github/launch-checklist.md)（內部文件）。
+> 📅 **Хочешь увидеть, что зашло недавно?** → [`CHANGELOG.md`](CHANGELOG.md) (последние 14 дней).
+> Внутренний прогресс phase rollout и launch checklist: [`.github/launch-checklist.md`](.github/launch-checklist.md) (внутренний документ мейнтейнера).
 
 ---
 
-## 🙏 致謝
+## 🙏 Благодарности
 
-### Inspiration
+### Источники вдохновения
 
-- [**Datawhale Hello-Agents**](https://github.com/datawhalechina/hello-agents) — 系統性 agent 教學的範本，本 repo 的「章節 + 進度」結構就是受這份啟發
-- [**Datawhale 社群**](https://github.com/datawhalechina) — 中文 ML 共學社群的標竿，本 repo 多個 anchor project 來自這裡
-- [**liyupi/ai-guide**](https://github.com/liyupi/ai-guide) — 中文圈最大「AI 資源大全」，跟 Vibe Coding 教學齊全（涵蓋 Agent Skills / RAG / MCP / A2A / Harness Engineering）。本 repo 是「結構化路線」、ai-guide 是「廣度資源庫」，互為補充
+- [**Datawhale Hello-Agents**](https://github.com/datawhalechina/hello-agents) — образец систематической структуры agent-туториала; вдохновил наш дизайн глав + прогресса
+- [**Datawhale community**](https://github.com/datawhalechina) — знаковое китайское ML-обучающее сообщество; несколько якорных проектов взяты оттуда
+- [**liyupi/ai-guide**](https://github.com/liyupi/ai-guide) — крупнейший китайский «AI mega-guide» + Vibe Coding tutorial (покрывает Agent Skills / RAG / MCP / A2A / Harness Engineering). Этот репо — «структурированная карта», ai-guide — «хаб ресурсов вширь», они дополняют друг друга
 
-### 其他相關專案
+### Связанные проекты
 
-同主題、不同切入角度的清單，搜資源時可以一起用：
+Другие списки в той же области — полезно листать параллельно при поиске конкретных инструментов:
 
-- [`wong2/awesome-mcp-servers`](https://github.com/wong2/awesome-mcp-servers) — MCP server 清單，按分類整理
-- [`punkpeye/awesome-mcp-servers`](https://github.com/punkpeye/awesome-mcp-servers) — 另一份 MCP server 清單
-- [`hesreallyhim/awesome-claude-code`](https://github.com/hesreallyhim/awesome-claude-code) — Claude Code 相關工具與 plugin 清單
+- [`wong2/awesome-mcp-servers`](https://github.com/wong2/awesome-mcp-servers) — категоризированный каталог MCP servers
+- [`punkpeye/awesome-mcp-servers`](https://github.com/punkpeye/awesome-mcp-servers) — ещё один каталог MCP servers
+- [`hesreallyhim/awesome-claude-code`](https://github.com/hesreallyhim/awesome-claude-code) — список инструментов и плагинов Claude Code
 
-這些是純清單形式（看到再挑），本 repo 的不同點是有「**從 Stage 0 一路走到 production 的學習順序**」。
+Это чисто каталоги (листай и выбирай). Этот репо отличается тем, что в нём **порядок обучения с этапа 0 до продакшена**.
 
-### 貢獻者
+### Контрибьюторы
 
 [![Contributors](https://contrib.rocks/image?repo=WenyuChiou/awesome-agentic-ai-zh)](https://github.com/WenyuChiou/awesome-agentic-ai-zh/graphs/contributors)
 
-新貢獻者會自動出現在上方。完整列表 → [GitHub Contributors](https://github.com/WenyuChiou/awesome-agentic-ai-zh/graphs/contributors)。
+Новые контрибьюторы появляются выше автоматически. Полный список → [GitHub Contributors](https://github.com/WenyuChiou/awesome-agentic-ai-zh/graphs/contributors).
 
-### 個人
+### Лично
 
-- [@WenyuChiou](https://github.com/WenyuChiou) — Maintainer
+- [@WenyuChiou](https://github.com/WenyuChiou) — мейнтейнер
 
 ---
 
-## 🎓 引用
+## 🎓 Цитирование
 
-如果這個學習地圖對你的學習或工作有幫助，歡迎引用：
+Если эта карта обучения помогла твоему обучению или работе — пожалуйста, цитируй:
 
 ```bibtex
 @misc{awesome_agentic_ai_zh_2026,
@@ -281,13 +239,13 @@ PR 流程跟 style 規範請看 [CONTRIBUTING.md](CONTRIBUTING.md) 跟 [resource
   author = {Chiou, Wenyu},
   year   = {2026},
   url    = {https://github.com/WenyuChiou/awesome-agentic-ai-zh},
-  note   = {7-stage learning path from prerequisites to advanced multi-agent systems, with curated projects + hello-X demos. Bilingual (zh-TW / English).}
+  note   = {7-stage learning path from prerequisites to advanced multi-agent systems, with curated projects + hello-X demos. Multilingual (zh-TW / English / Russian).}
 }
 ```
 
 ---
 
-## 📈 Star History
+## 📈 История звёзд
 
 [![Star History Chart](https://api.star-history.com/svg?repos=WenyuChiou/awesome-agentic-ai-zh&type=Date)](https://star-history.com/#WenyuChiou/awesome-agentic-ai-zh&Date)
 
@@ -295,8 +253,8 @@ PR 流程跟 style 規範請看 [CONTRIBUTING.md](CONTRIBUTING.md) 跟 [resource
 
 ## License
 
-MIT。Maintained by [@WenyuChiou](https://github.com/WenyuChiou)。
+MIT. Поддерживает [@WenyuChiou](https://github.com/WenyuChiou).
 
 <div align="center">
-  <p>⭐ 如果這個 repo 對你有幫助，歡迎給個 Star — 這對作者繼續更新是很大的鼓勵</p>
+  <p>⭐ Если репо помог — поставь Star, это важно для итераций</p>
 </div>

@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="./README.md">繁體中文</a> | <strong>简体中文</strong> | <a href="./README.en.md">English</a> | <a href="./README.ru.md">Русский</a>
+  <a href="./README.zh-TW.md">繁體中文</a> | <strong>简体中文</strong> | <a href="./README.en.md">English</a> | <a href="./README.md">Русский</a>
 </div>
 
 <div align="center">
@@ -13,7 +13,7 @@
 <p><em><b>学习路线图 + 145+ 资源 curation + 简单 illustrative 案例</b><br/>结构化 7 阶段、从「LLM 是什么、token 怎么算」走到 multi-agent 编排、本地部署</em></p>
 
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat)](LICENSE)
-[![繁中](https://img.shields.io/badge/語言-繁體中文-red?style=flat)](README.md)
+[![繁中](https://img.shields.io/badge/語言-繁體中文-red?style=flat)](README.zh-TW.md)
 [![简中](https://img.shields.io/badge/語言-简体中文-orange?style=flat)](README.zh-Hans.md)
 [![EN](https://img.shields.io/badge/lang-English-blue?style=flat)](README.en.md)
 ![GitHub stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat&logo=github)

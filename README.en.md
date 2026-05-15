@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="./README.md">繁體中文</a> | <a href="./README.zh-Hans.md">简体中文</a> | <strong>English</strong> | <a href="./README.ru.md">Русский</a>
+  <a href="./README.zh-TW.md">繁體中文</a> | <a href="./README.zh-Hans.md">简体中文</a> | <strong>English</strong> | <a href="./README.md">Русский</a>
 </div>
 
 <div align="center">
@@ -11,7 +11,7 @@
 </div>
 
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![繁中](https://img.shields.io/badge/語言-繁體中文-red)](README.md)
+[![繁中](https://img.shields.io/badge/語言-繁體中文-red)](README.zh-TW.md)
 [![简中](https://img.shields.io/badge/語言-简体中文-orange)](README.zh-Hans.md)
 [![EN](https://img.shields.io/badge/lang-English-blue)](README.en.md)
 ![GitHub stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?logo=github)

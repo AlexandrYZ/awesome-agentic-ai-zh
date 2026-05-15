@@ -1,24 +1,26 @@
 <div align="right">
-  <a href="./README.md">繁體中文</a> | <a href="./README.zh-Hans.md">简体中文</a> | <a href="./README.en.md">English</a> | <strong>Русский</strong>
+  <a href="./README.zh-TW.md">繁體中文</a> | <a href="./README.zh-Hans.md">简体中文</a> | <a href="./README.en.md">English</a> | <strong>Русский</strong>
 </div>
 
 <div align="center">
 
 ![Карта обучения AI Agent](resources/diagrams/banner.en.png)
 
-# awesome-agentic-ai-zh
+# awesome-agentic-ai-ru
 
 </div>
 
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![繁中](https://img.shields.io/badge/語言-繁體中文-red)](README.md)
+[![繁中](https://img.shields.io/badge/語言-繁體中文-red)](README.zh-TW.md)
 [![简中](https://img.shields.io/badge/語言-简体中文-orange)](README.zh-Hans.md)
 [![EN](https://img.shields.io/badge/lang-English-blue)](README.en.md)
 [![RU](https://img.shields.io/badge/lang-Русский-green)](README.ru.md)
-![GitHub stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?logo=github)
-![GitHub forks](https://img.shields.io/github/forks/WenyuChiou/awesome-agentic-ai-zh?logo=github)
+![GitHub stars](https://img.shields.io/github/stars/AlexandrYZ/awesome-agentic-ai-ru?logo=github)
+![GitHub forks](https://img.shields.io/github/forks/AlexandrYZ/awesome-agentic-ai-ru?logo=github)
 
-> **Русская версия. Канонический файл — zh-TW [README.md](README.md)**. Контент сначала курируется на zh-TW, эта страница — зеркало для русскоязычных читателей.
+> **Русскоязычная community translation** проекта [WenyuChiou/awesome-agentic-ai-zh](https://github.com/WenyuChiou/awesome-agentic-ai-zh). Этот fork ведется как самостоятельная русская версия; upstream остается источником новых изменений.
+
+> **Статус перевода:** текущий русский корпус покрывает этапы 0-7 и материалы, подготовленные в исходной русской ветке. Новые изменения upstream, включая Stage 8 и последующие переработки, будут переноситься отдельными синхронизационными итерациями.
 
 Карта обучения agentic AI — **от основ LLM до построения multi-agent систем**. Структурированный путь из 7 этапов: от «что такое LLM, как считаются токены» до multi-agent orchestration (оркестровки нескольких агентов) и локального развёртывания. На каждом этапе — обязательные демо, обязательное чтение и подборка проектов.
 
@@ -60,8 +62,8 @@
 
 ### Локальный клон
 ```bash
-git clone https://github.com/WenyuChiou/awesome-agentic-ai-zh.git
-cd awesome-agentic-ai-zh
+git clone https://github.com/AlexandrYZ/awesome-agentic-ai-ru.git
+cd awesome-agentic-ai-ru
 # Начни с stages/00-foundations.ru.md
 ```
 
@@ -71,7 +73,7 @@ cd awesome-agentic-ai-zh
 - 🗺️ **Две дорожки** — Track A (CLI Power User) для «использовать готовые CLI»; Track B (Agent Builder) для «собрать своё». Общий фундамент — этапы 0–2.
 - 🛠️ **Обязательные практические упражнения** — 1–5 мини-проектов на этап (спецификации + критерии успеха, **код пишешь сам**, не готовые демо); просто читать — не считается
 - 🎯 **145+ отобранных проектов** — каждый со звёздным рейтингом, целевой аудиторией, описанием чему учит и как запустить (включая локальные LLM-раннеры: Ollama, llama.cpp, LocalAI, MLX)
-- 🌏 **Многоязычность** — канонический zh-TW, зеркала на английском, упрощённом китайском и русском
+- 🌏 **Русский вход по умолчанию** — китайские и английская версии сохранены как companion-материалы upstream
 - 🎓 **Шире фреймворков: экосистема Claude Code** — MCP / Skills / Plugins / SDK, полный стек
 - 🔬 **5 специализированных веток** — researcher / developer / teacher / knowledge worker / **everyday user**
 - ⏱️ **Затраты времени, честно** — минимум 14–19 недель, реалистично 5–6 месяцев (5–8 ч/нед part-time)
